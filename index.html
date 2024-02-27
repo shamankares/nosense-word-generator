@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Nosense Word Generator</title>
+</head>
+<body>
+  <div id="wrapper">
+    <section id="site">
+      <aside id="head" class="box">
+        <header class="center">
+          <h1>Nosense Word Generator</h1>
+          <h3>Use this generator to make some made-up words.</h3>
+        </header>
+    
+        <section id="instruction">
+          <p>How to use: Use the following letters in the "Pattern" input box to generate some words that adhere the pattern.</p>
+          <p>V: Vocal letter</p>
+          <p>C: Consonant letter</p>
+          <p>You may customize vocal or consonant letters in "Advanced Generator"</p>
+          <p>Example: If you input "VCVCC" (without quotation) in the "Pattern" input box with default vocal and consonant letters, the possible outcomes may be "utowt", "ikawh", etc.</p>
+        </section>
+      </aside>
+    
+      <aside id="content" class="box">
+        <form class="box">
+          <div class="form-input">
+            <label for="pattern">Pattern</label>
+            <input type="text" name="pattern" id="pattern">
+          </div>
+  
+          <div class="form-input">
+            <label for="nums">Number of generated words</label>
+            <input type="number" name="nums" id="nums" min="1" value="1" size="4">
+          </div>
+  
+          <details>
+            <summary>Advanced Generator</summary>
+            <div id="advanced">
+              <div class="form-input">
+                <label for="vocals">Vocals</label>
+                <input type="text" name="vocals" id="vocals" placeholder="aiueo">
+              </div>
+  
+              <div class="form-input">
+                <label for="consonants">Consonants</label>
+                <input type="text" name="consonants" id="consonants" placeholder="bcdfghjklmnpqrstvwxyz">
+              </div>
+            </div>
+          </details>
+  
+          <div id="generate" class="center">
+            <button type="submit">Generate</button>
+          </div>
+        </form>
+    
+        <section id="results" class="box center">
+          <h3>Results:</h3>
+          <div id="results-list"></div>
+        </section>
+      </aside>
+    </section>
+
+    <footer class="box center">
+      <p>Created by <a href="http://github.com/shamankares">ShamanKares</a></p>
+    </footer>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

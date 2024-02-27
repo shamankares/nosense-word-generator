@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Kreon:wght@700&display=swap');
+
+:root {
+  --gutter: 10px;
+  --brown: #c6aa81;
+  --dark-brown: #522a15;
+  --black: #060606;
+  --white: #e7e7e7;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#results {
+  width: 65%;
+}
+
+#results-list > p {
+  margin-top: 3px;
+}
+
+#wrapper {
+  font-family: 'EB Garamond', serif;
+
+  width: max(450px, 75%);
+  margin: 0 auto;
+}
+
+#site {
+  display: flex;
+}
+
+#head {
+  flex: 1 4;
+}
+
+#head header {
+  font-family: 'Kreon', serif;
+}
+
+#head header h1 {
+  font-size: 2em;
+}
+
+#instruction p {
+  margin: 8px 0;
+}
+
+#content {
+  flex: 3 4;
+}
+
+#content > * {
+  padding: 25px;
+  margin: 15px auto;
+}
+
+#generate {
+  margin: 15px 0 0;
+}
+
+.box {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.center {
+  text-align: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+
+  margin: 8px 0;
+}
+
+body {
+  background-color: var(--brown);
+}
+
+aside {
+  margin: 30px var(--gutter) 0;
+  padding: 30px;
+}
+
+footer {
+  margin: 20px var(--gutter);
+  padding: 20px;
+
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}
+
+footer a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+form {
+  width: max(300px, 75%);
+}
+
+input, button {
+  border: 2px solid black;
+  background-color: var(--white);
+  padding: 5px;
+}
+
+button:hover {
+  border-color: var(--brown);
+  color: var(--brown);
+}
+
+button:active {
+  background-color: var(--brown);
+  border-color: var(--black);
+  color: var(--black);
+}
+
+input[type="number"] {
+  width: 4.5em;
+}
+
+@media screen {
+  @media (max-width: 768px) {
+    #site {
+      flex-direction: column;
+    }
+
+    aside, footer {
+      margin: 10px 0;
+    }
+
+    form {
+      width: min(650px, 100%);
+    }
+  }
+
+  @media (max-width: 425px) {
+    #wrapper {
+      width: 100%;
+    }
+
+    form {
+      width: 100%;
+    }
+  }
+}
