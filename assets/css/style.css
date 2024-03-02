@@ -88,7 +88,7 @@ aside {
 }
 
 footer {
-  margin: 20px var(--gutter);
+  margin: 20px var(--gutter) 0;
   padding: 20px;
 
   background-color: var(--black) !important;
